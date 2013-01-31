@@ -9,7 +9,6 @@ class TwitterWidget < Apotomo::Widget
   def process_tweet(evt)
     Tweet.new(:text => evt[:text]).save
 
-    @tweets = Tweet.all
     replace :view => :display
   end
 

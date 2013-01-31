@@ -1,4 +1,6 @@
-= form_tag url_for_event(:submit), :remote => true do
-  = text_field_tag 'text'
+= form_for :tweet, :url => url_for_event(:submit), :remote => true do |f|
+  = f.error_messages
+
+  = f.text_field 'text'
    
   = submit_tag "Tweet!"

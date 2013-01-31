@@ -23,6 +23,8 @@ gem 'jquery-rails'
 
 gem 'apotomo'
 
+gem 'dynamic_form'
+
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
   gem 'rspec-apotomo'

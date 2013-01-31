@@ -1,8 +1,5 @@
 = widget_div do
-  %ul
-    - for tweet in @tweets
-      %li
-        = tweet.text
+  = render :view => :list, :locals => {:tweets => @tweets}
  
   %p
     What are you up to?

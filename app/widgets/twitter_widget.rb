@@ -12,4 +12,8 @@ class TwitterWidget < Apotomo::Widget
     @tweets = Tweet.all
     replace :view => :display
   end
+
+  def list(tweets)
+    render :locals => {:tweets => tweets}
+  end
 end
